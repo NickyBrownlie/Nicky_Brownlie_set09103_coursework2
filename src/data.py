@@ -9,6 +9,14 @@ LeafandBean = {
 
   'EnglishBreakfast': '2.50',
   'EarlGrey': '2.50',
+
+  'MondayO': '9.00',    'MondayC': '17.00',
+  'TuesdayO': '9.00',   'TuesdayC': '17.00',
+  'WednesdayO': '9.00', 'WednesdayC': '17.00',
+  'ThursdayO': '9.00',  'ThursdayC': '17.00',
+  'FridayO': '9.00',    'FridayC': '17.00',
+  'SaturdayO': '9.00',  'SaturdayC': '17.00',
+  'SundayO': '10.00',   'SundayC': '17.00',
 }
 
 LaBarantine = {
@@ -22,6 +30,15 @@ LaBarantine = {
 
   'EnglishBreakfast': '2.40',
   'EarlGrey': '2.40',
+
+  'MondayO': '7.15',    'MondayC': '18.00',
+  'TuesdayO': '7.15',   'TuesdayC': '18.00',
+  'WednesdayO': '7.15', 'WednesdayC': '18.00',
+  'ThursdayO': '7.15',  'ThursdayC': '18.00',
+  'FridayO': '7.15',    'FridayC': '18.00',
+  'SaturdayO': '7.15',  'SaturdayC': '18.00',
+  'SundayO': '7.15',   'SundayC': '18.00',
+
 }
 
 ThePod = {
@@ -35,6 +52,15 @@ ThePod = {
 
   'EnglishBreakfast': '2.00',
   'EarlGrey': '2.00',
+
+  'MondayO': '8.00',    'MondayC': '19.00',
+  'TuesdayO': '8.00',   'TuesdayC': '19.00',
+  'WednesdayO': '8.00', 'WednesdayC': '19.00',
+  'ThursdayO': '8.00',  'ThursdayC': '17.30',
+  'FridayO': '8.00',    'FridayC': '17.30',
+  'SaturdayO': '9.00',  'SaturdayC': '17.00',
+  'SundayO': 'Closed',   'SundayC': 'Closed',
+
 }
 
 Starbucks = {
@@ -48,6 +74,15 @@ Starbucks = {
 
   'EnglishBreakfast': '2.89',
   'EarlGrey': '2.89',
+
+  'MondayO': '5.45',    'MondayC': '21.30',
+  'TuesdayO': '5.45',   'TuesdayC': '21.30',
+  'WednesdayO': '5.45', 'WednesdayC': '21.30',
+  'ThursdayO': '5.45',  'ThursdayC': '21.30',
+  'FridayO': '5.45',    'FridayC': '21.30',
+  'SaturdayO': '5.45',  'SaturdayC': '21.30',
+  'SundayO': '5.45',   'SundayC': '21.30',
+
 }
 
 Costa = {
@@ -61,6 +96,15 @@ Costa = {
 
   'EnglishBreakfast': '1.75',
   'EarlGrey': '1.75',
+
+  'MondayO': '7.00',    'MondayC': '20.00',
+  'TuesdayO': '7.00',   'TuesdayC': '20.00',
+  'WednesdayO': '7.00', 'WednesdayC': '20.00',
+  'ThursdayO': '7.00',  'ThursdayC': '20.00',
+  'FridayO': '7.00',    'FridayC': '20.00',
+  'SaturdayO': '7.00',  'SaturdayC': '20.00',
+  'SundayO': '8.00',   'SundayC': '20.00',
+
 }
 
 ProjectCoffee = {
@@ -73,6 +117,15 @@ ProjectCoffee = {
 
   'EnglishBreakfast': '1.85',
   'EarlGrey': '2.25',
+
+  'MondayO': '7.30',    'MondayC': '19.00',
+  'TuesdayO': '7.30',   'TuesdayC': '19.00',
+  'WednesdayO': '7.30', 'WednesdayC': '19.00',
+  'ThursdayO': '7.30',  'ThursdayC': '19.00',
+  'FridayO': '7.30',    'FridayC': '19.00',
+  'SaturdayO': '8.00',  'SaturdayC': '18.00',
+  'SundayO': '8.00',   'SundayC': '18.00',
+
 }
 
 OrganicDeliciousCafe = {
@@ -86,6 +139,15 @@ OrganicDeliciousCafe = {
 
   'EnglishBreakfast': '2.75',
   'EarlGrey': '2.95',
+
+  'MondayO': '10.00',    'MondayC': '16.00',
+  'TuesdayO': '10.00',   'TuesdayC': '16.00',
+  'WednesdayO': '10.00', 'WednesdayC': '16.00',
+  'ThursdayO': '10.00',  'ThursdayC': '16.00',
+  'FridayO': '9.30',    'FridayC': '16.30',
+  'SaturdayO': '9.30',  'SaturdayC': '16.30',
+  'SundayO': '10.00',   'SundayC': '16.00',
+
 }
 
 CafeNero = {
@@ -99,6 +161,15 @@ CafeNero = {
 
   'EnglishBreakfast': '1.90',
   'EarlGrey': '1.90',
+
+  'MondayO': '7.30',    'MondayC': '18.30',
+  'TuesdayO': '7.30',   'TuesdayC': '18.30',
+  'WednesdayO': '7.30', 'WednesdayC': '18.30',
+  'ThursdayO': '7.30',  'ThursdayC': '18.30',
+  'FridayO': '7.30',    'FridayC': '18.30',
+  'SaturdayO': '7.30',  'SaturdayC': '18.30',
+  'SundayO': '8.30',   'SundayC': '18.00',
+
 }
 
 Greggs = {
@@ -111,6 +182,15 @@ Greggs = {
   'HotChocolate': '1.65','HotChocolate': '1.90',
 
   'EnglishBreakfast': '1.00 (Large 2.00)',
+
+  'MondayO': '7.00',    'MondayC': '17.00',
+  'TuesdayO': '7.00',   'TuesdayC': '17.00',
+  'WednesdayO': '7.00', 'WednesdayC': '17.00',
+  'ThursdayO': '7.00',  'ThursdayC': '17.00',
+  'FridayO': '7.00',    'FridayC': '17.00',
+  'SaturdayO': '7.30',  'SaturdayC': '16.30',
+  'SundayO': '9.00',   'SundayC': '16.00',
+
 }
 
 PieceBox = {
@@ -124,4 +204,13 @@ PieceBox = {
 
   'EnglishBreakfast': '2.00',
   'EarlGrey': '2.00',
+
+  'MondayO': '9.00',    'MondayC': '17.00',
+  'TuesdayO': '9.00',   'TuesdayC': '17.00',
+  'WednesdayO': '9.00', 'WednesdayC': '17.00',
+  'ThursdayO': '9.00',  'ThursdayC': '17.00',
+  'FridayO': '9.00',    'FridayC': '17.00',
+  'SaturdayO': '9.00',  'SaturdayC': '17.00',
+  'SundayO': '9.00',   'SundayC': '17.00',
+
 }
