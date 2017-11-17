@@ -21,7 +21,7 @@ LeafandBean = {
   'SaturdayO': '9.00',  'SaturdayC': '17.00',
   'SundayO': '10.00',   'SundayC': '17.00',
 
-  'Image': '/static/images/leafandbean.jpg',
+  'Image': '/static/images/leafandbean2.jpg',
 }
 
 LaBarantine = {

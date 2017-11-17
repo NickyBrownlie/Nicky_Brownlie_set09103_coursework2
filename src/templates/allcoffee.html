@@ -1,18 +1,107 @@
+{%block content%}
 <html>
 <head>
+<style>
+table {
+  width:50%;
+  }
+  table, th, td {
+    border: 1px solid black;
+    }
+</style>
 </head>
 
 <body>
 <table>
   <tr>
-    <td rowspan="2"><img height="300" width="300" src="{{LeafandBean.Image}}"</td>
-    <td>{{LeafandBean.Title}}</td>
+    <td rowspan="2"><a href="/leafandbean"><img height="200" width="200" src="{{LeafandBean.Image}}"></a></td>
+    <td><a href="/leafandbean">{{LeafandBean.Title}}</a></td>
   </tr>
   <tr>
     <td>{{LeafandBean.Address}}</td>
   </tr>
-</table
-
-
+</table>
+<table>
+  <tr>
+    <td rowspan="2"><a href="/labarantine"><img height="200" width="200" src="{{LaBarantine.Image}}"></a></td>
+    <td><a href="/labarantine">{{LaBarantine.Title}}</a></td>
+  </tr>
+  <tr>
+    <td>{{LaBarantine.Address}}</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td rowspan="2"><a href="/thepod"><img height="200" width="200" src="{{ThePod.Image}}"></a></td>
+    <td><a href="/thepod">{{ThePod.Title}}</a></td>
+  </tr>
+  <tr>
+    <td>{{ThePod.Address}}</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td rowspan="2"><a href="/starbucks"><img height="200" width="200" src="{{Starbucks.Image}}"></a></td>
+    <td><a href="/starbucks">{{Starbucks.Title}}</a></td>
+  </tr>
+  <tr>
+    <td>{{Starbucks.Address}}</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td rowspan="2"><a href="/costa"><img height="200" width="200" src="{{Costa.Image}}"></a></td>
+    <td><a href="/costa">{{Costa.Title}}</a></td>
+  </tr>
+  <tr>
+    <td>{{Costa.Address}}</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td rowspan="2"><a href="/projectcoffee"><img height="200" width="200" src="{{ProjectCoffee.Image}}"></a></td>
+    <td><a href="/projectcoffee">{{ProjectCoffee.Title}}</a></td>
+  </tr>
+  <tr>
+    <td>{{ProjectCoffee.Address}}</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td rowspan="2"><a href="/organicdeliciouscafe"><img height="200" width="200" src="{{OrganicDeliciousCafe.Image}}"></a></td>
+    <td><a href="/organicdeliciouscafe">{{OrganicDeliciousCafe.Title}}</a></td>
+  </tr>
+  <tr>
+    <td>{{OrganicDeliciousCafe.Address}}</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td rowspan="2"><a href="/cafenero"><img height="200" width="200" src="{{CafeNero.Image}}"></a></td>
+    <td><a href="/cafenero">{{CafeNero.Title}}</a></td>
+  </tr>
+  <tr>
+    <td>{{CafeNero.Address}}</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td rowspan="2"><a href="/greggs"><img height="200" width="200" src="{{Greggs.Image}}"></a></td>
+    <td><a href="/greggs">{{Greggs.Title}}</a></td>
+  </tr>
+  <tr>
+    <td>{{Greggs.Address}}</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td rowspan="2"><a href="/piecebox"><img height="200" width="200" src="{{PieceBox.Image}}"></a></td>
+    <td><a href="/piecebox">{{PieceBox.Title}}</a></td>
+  </tr>
+  <tr>
+    <td>{{PieceBox.Address}}</td>
+  </tr>
+</table>
 </body>
 </html>
+{% endblock %}
