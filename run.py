@@ -3,6 +3,10 @@ app = Flask(__name__, template_folder='/home/tc/Nicky_Brownlie_set09103_coursewo
 
 from src.data import *
 
+@app.route('/allcoffee/')
+def allcoffee():
+  return render_template('allcoffee.html', LeafandBean=LeafandBean)
+
 @app.route('/leafandbean/')
 def leafandbean():
   var1 = LeafandBean

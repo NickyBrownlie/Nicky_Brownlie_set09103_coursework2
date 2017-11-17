@@ -1,4 +1,7 @@
 LeafandBean = {
+  'Title': 'Leaf and Bean',
+  'Address': '12-14 Comiston Rd, Edinburgh EH10 5QE',
+
   'Espresso': '1.80',    'EspressoMedium': '',    'EspressoLarge': '2.70',
   'Americano': '2.10',   'AmericanoMedium': '',   'AmericanoLarge': '3.00',
   'Latte': '2.30',       'LatteMedium': '',       'LatteLarge': '3.30',
@@ -17,9 +20,14 @@ LeafandBean = {
   'FridayO': '9.00',    'FridayC': '17.00',
   'SaturdayO': '9.00',  'SaturdayC': '17.00',
   'SundayO': '10.00',   'SundayC': '17.00',
+
+  'Image': '/static/images/leafandbean.jpg',
 }
 
 LaBarantine = {
+  'Title': 'La Barantine',
+  'Address': '202 Bruntsfield Pl, Edinburgh EH10 4DF',
+
   'Espresso': '1.75',    'EspressoLarge': '1.95',
   'Americano': '2.10',   'AmericanoLarge': '2.35',
   'Latte': '2.40',       'LatteLarge': '2.50',
@@ -39,9 +47,13 @@ LaBarantine = {
   'SaturdayO': '7.15',  'SaturdayC': '18.00',
   'SundayO': '7.15',   'SundayC': '18.00',
 
+  'Image': '/static/images/labarantine.jpg',
 }
 
 ThePod = {
+  'Title': 'The Pod',
+  'Address': '3 Viewforth Gardens, Edinburgh EH10 4ET',
+
   'Espresso': '2.00',
   'Americano': '2.45',
   'Latte': '2.45',
@@ -61,9 +73,13 @@ ThePod = {
   'SaturdayO': '9.00',  'SaturdayC': '17.00',
   'SundayO': 'Closed',   'SundayC': 'Closed',
 
+  'Image': '/static/images/thepod.jpg',
 }
 
 Starbucks = {
+  'Title': 'Starbucks',
+  'Address': '2 Colinton Rd, Edinburgh EH10 5DN',
+
   'Espresso': '1.60',    'EspressoMedium': '1.90',
   'Americano': '2.00',   'AmericanoMedium': '2.29',   'AmericanoLarge': '2.50',
   'Latte': '2.25',       'LatteMedium': '2.60',       'LatteLarge': '2.95',
@@ -83,9 +99,13 @@ Starbucks = {
   'SaturdayO': '5.45',  'SaturdayC': '21.30',
   'SundayO': '5.45',   'SundayC': '21.30',
 
+  'Image': '/static/images/starbucks.jpg',
 }
 
 Costa = {
+  'Title': 'Costa',
+  'Address': '10-14 Morningside Rd, Edinburgh EH10 4DB',
+
   'Espresso': '1.45',    'EspressoMedium': '1.80',
   'Americano': '1.95',   'AmericanoMedium': '2.20',   'AmericanoLarge': '2.40',
   'Latte': '2.15',       'LatteMedium': '2.45',       'LatteLarge': '2.65',
@@ -105,9 +125,13 @@ Costa = {
   'SaturdayO': '7.00',  'SaturdayC': '20.00',
   'SundayO': '8.00',   'SundayC': '20.00',
 
+  'Image': '/static/images/costa.jpg',
 }
 
 ProjectCoffee = {
+  'Title': 'Project Coffee',
+  'Address': '196 Bruntsfield Pl, Edinburgh EH10 4DF',
+
   'Espresso': '1.60',    'Espressolarge': '1.90',
   'Americano': '1.95',   'AmericanoLarge': '2.50',
   'Latte': '2.05',       'LatteLarge': '2.60',
@@ -126,9 +150,13 @@ ProjectCoffee = {
   'SaturdayO': '8.00',  'SaturdayC': '18.00',
   'SundayO': '8.00',   'SundayC': '18.00',
 
+  'Image': '/static/images/projectcoffee.jpg',
 }
 
 OrganicDeliciousCafe = {
+  'Title': 'Organic Delicious Cafe',
+  'Address': '26 Morningside Rd, Edinburgh EH10 4DA',
+
   'Espresso': '2.40',
   'Americano': '2.70',
   'Latte': '2.95',
@@ -148,9 +176,13 @@ OrganicDeliciousCafe = {
   'SaturdayO': '9.30',  'SaturdayC': '16.30',
   'SundayO': '10.00',   'SundayC': '16.00',
 
+  'Image': '/static/images/organicdeliciouscafe.jpg',
 }
 
 CafeNero = {
+  'Title': 'Cafe Nero',
+  'Address': '177 Morningside Rd, Edinburgh EH10 4AX',
+
   'Espresso': '1.65',
   'Americano': '1.85',   'AmericanoMedium': '2.15',   'AmericanoLarge': '2.45',
   'Latte': '2.05',       'LatteMedium': '2.45',       'LatteLarge': '2.75',
@@ -170,9 +202,13 @@ CafeNero = {
   'SaturdayO': '7.30',  'SaturdayC': '18.30',
   'SundayO': '8.30',   'SundayC': '18.00',
 
+  'Image': '/static/images/cafenero.jpg',
 }
 
 Greggs = {
+  'Title': 'Greggs',
+  'Address': '198 Bruntsfield Pl, Edinburgh EH10 4DF',
+
   'Espresso': '1.35',
   'Americano': '2.50',   'AmericanoLarge': '1.75',
   'Latte': '1.75',       'LatteLarge': '2.00',
@@ -191,9 +227,13 @@ Greggs = {
   'SaturdayO': '7.30',  'SaturdayC': '16.30',
   'SundayO': '9.00',   'SundayC': '16.00',
 
+  'Image': '/static/images/greggs.jpg',
 }
 
 PieceBox = {
+  'Title': 'Piece Box',
+  'Address': '2 Polwarth Cres, Edinburgh EH11 1HW',
+
   'Espresso': '2.00',
   'Americano': '2.00',   'AmericanoLarge': '2.30',
   'Latte': '2.30',       'LatteLarge': '2.60',
@@ -213,4 +253,5 @@ PieceBox = {
   'SaturdayO': '9.00',  'SaturdayC': '17.00',
   'SundayO': '9.00',   'SundayC': '17.00',
 
+  'Image': '/static/images/piecebox.jpg',
 }
