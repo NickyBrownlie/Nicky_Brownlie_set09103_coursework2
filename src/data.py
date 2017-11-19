@@ -22,6 +22,7 @@ LeafandBean = {
   'SundayO': '10.00',   'SundayC': '17.00',
 
   'Image': '/static/images/leafandbean2.jpg',
+  'Review': '/static/images/leafandbeanReview.jpg',
 }
 
 LaBarantine = {
@@ -48,6 +49,7 @@ LaBarantine = {
   'SundayO': '7.15',   'SundayC': '18.00',
 
   'Image': '/static/images/labarantine.jpg',
+  'Review': '/static/images/labarantineReview.jpg',
 }
 
 ThePod = {
@@ -74,6 +76,7 @@ ThePod = {
   'SundayO': 'Closed',   'SundayC': 'Closed',
 
   'Image': '/static/images/thepod.jpg',
+  'Review': '/static/images/thepodReview.jpg',
 }
 
 Starbucks = {
@@ -100,6 +103,7 @@ Starbucks = {
   'SundayO': '5.45',   'SundayC': '21.30',
 
   'Image': '/static/images/starbucks.jpg',
+  'Review': '/static/images/starbucksReview.jpg',
 }
 
 Costa = {
@@ -126,6 +130,7 @@ Costa = {
   'SundayO': '8.00',   'SundayC': '20.00',
 
   'Image': '/static/images/costa.jpg',
+  'Review': '/static/images/costaReview.jpg',
 }
 
 ProjectCoffee = {
@@ -151,6 +156,7 @@ ProjectCoffee = {
   'SundayO': '8.00',   'SundayC': '18.00',
 
   'Image': '/static/images/projectcoffee.jpg',
+  'Review': '/static/images/projectcoffeeReview.jpg',
 }
 
 OrganicDeliciousCafe = {
@@ -177,6 +183,7 @@ OrganicDeliciousCafe = {
   'SundayO': '10.00',   'SundayC': '16.00',
 
   'Image': '/static/images/organicdeliciouscafe.jpg',
+  'Review': '/static/images/organicdeliciouscafeReview.jpg',
 }
 
 CafeNero = {
@@ -203,6 +210,7 @@ CafeNero = {
   'SundayO': '8.30',   'SundayC': '18.00',
 
   'Image': '/static/images/cafenero.jpg',
+  'Review': '/static/images/cafeneroReview.jpg',
 }
 
 Greggs = {
@@ -228,6 +236,7 @@ Greggs = {
   'SundayO': '9.00',   'SundayC': '16.00',
 
   'Image': '/static/images/greggs.jpg',
+  'Review': '/static/images/greggsReview1.jpg',
 }
 
 PieceBox = {
@@ -254,4 +263,5 @@ PieceBox = {
   'SundayO': '9.00',   'SundayC': '17.00',
 
   'Image': '/static/images/piecebox.jpg',
+  'Review': '/static/images/pieceboxReview.jpg',
 }
