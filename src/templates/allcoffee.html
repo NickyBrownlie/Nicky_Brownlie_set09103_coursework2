@@ -3,21 +3,36 @@
 <html>
 <head>
 <style>
-  table, th, td, tr {
+  img {
+    display: block;
+  }
+  table {
+    table-layout: fixed;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+   th, td, tr {
     border: 1px solid black;
     width: 301px;
-    table-layout: fixed;
-    margin-left:5px;
     text-align: center;
     }
+  th {
+    background-color: #333333; 
+    color: #337AB7;
+  }
+  body{
+    background-image: url("/static/images/brownbackground.jpg");
+  }
 </style>
 </head>
 
 <body>
 <table>
   <tr>
-    <td rowspan="2"><a href="/leafandbean"><img height="200" width="300" src="{{LeafandBean.Image}}"></a></td>
-    <td><a href="/leafandbean">{{LeafandBean.Title}}</a></td>
+    <td rowspan="2"><a href="/leafandbean"><img height="210" width="300" src="{{LeafandBean.Image}}"></a></td>
+    <th><a href="/leafandbean">{{LeafandBean.Title}}</a></th>
+    <th>TripAdvisor Review</th>
   </tr>
   <tr>
     <td><a
@@ -27,8 +42,9 @@
 </table>
 <table>
   <tr>
-    <td rowspan="2"><a href="/labarantine"><img height="200" width="300" src="{{LaBarantine.Image}}"></a></td>
-    <td><a href="/labarantine">{{LaBarantine.Title}}</a></td>
+    <td rowspan="2"><a href="/labarantine"><img height="210" width="300" src="{{LaBarantine.Image}}"></a></td>
+    <th><a href="/labarantine">{{LaBarantine.Title}}</a></th>
+    <th>TripAdvisor Review</th>
   </tr>
   <tr>
     <td><a
@@ -38,8 +54,9 @@
 </table>
 <table>
   <tr>
-    <td rowspan="2"><a href="/thepod"><img height="200" width="300" src="{{ThePod.Image}}"></a></td>
-    <td><a href="/thepod">{{ThePod.Title}}</a></td>
+    <td rowspan="2"><a href="/thepod"><img height="210" width="300" src="{{ThePod.Image}}"></a></td>
+    <th><a href="/thepod">{{ThePod.Title}}</a></th>
+    <th>TripAdvisor Review</th>
   </tr>
   <tr>
     <td><a
@@ -49,8 +66,9 @@
 </table>
 <table>
   <tr>
-    <td rowspan="2"><a href="/starbucks"><img height="200" width="300" src="{{Starbucks.Image}}"></a></td>
-    <td><a href="/starbucks">{{Starbucks.Title}}</a></td>
+    <td rowspan="2"><a href="/starbucks"><img height="210" width="300" src="{{Starbucks.Image}}"></a></td>
+    <th><a href="/starbucks">{{Starbucks.Title}}</a></th>
+    <th>TripAdvisor Review</th>
   </tr>
   <tr>
     <td><a
@@ -60,8 +78,9 @@
 </table>
 <table>
   <tr>
-    <td rowspan="2"><a href="/costa"><img height="200" width="300" src="{{Costa.Image}}"></a></td>
-    <td><a href="/costa">{{Costa.Title}}</a></td>
+    <td rowspan="2"><a href="/costa"><img height="210" width="300" src="{{Costa.Image}}"></a></td>
+    <th><a href="/costa">{{Costa.Title}}</a></th>
+    <th>TripAdvisor Review</th>
   </tr>
   <tr>
     <td><a
@@ -71,8 +90,9 @@
 </table>
 <table>
   <tr>
-    <td rowspan="2"><a href="/projectcoffee"><img height="200" width="300" src="{{ProjectCoffee.Image}}"></a></td>
-    <td><a href="/projectcoffee">{{ProjectCoffee.Title}}</a></td>
+    <td rowspan="2"><a href="/projectcoffee"><img height="210" width="300" src="{{ProjectCoffee.Image}}"></a></td>
+    <th><a href="/projectcoffee">{{ProjectCoffee.Title}}</a></th>
+    <th>TripAdvisor Review</th>
   </tr>
   <tr>
     <td><a
@@ -82,8 +102,9 @@
 </table>
 <table>
   <tr>
-    <td rowspan="2"><a href="/organicdeliciouscafe"><img height="200" width="300" src="{{OrganicDeliciousCafe.Image}}"></a></td>
-    <td><a href="/organicdeliciouscafe">{{OrganicDeliciousCafe.Title}}</a></td>
+    <td rowspan="2"><a href="/organicdeliciouscafe"><img height="210" width="300" src="{{OrganicDeliciousCafe.Image}}"></a></td>
+    <th><a href="/organicdeliciouscafe">{{OrganicDeliciousCafe.Title}}</a></th>
+    <th>TripAdvisor Review</th>
   </tr>
   <tr>
     <td><a
@@ -93,8 +114,9 @@
 </table>
 <table>
   <tr>
-    <td rowspan="2"><a href="/cafenero"><img height="200" width="300" src="{{CafeNero.Image}}"></a></td>
-    <td><a href="/cafenero">{{CafeNero.Title}}</a></td>
+    <td rowspan="2"><a href="/cafenero"><img height="210" width="300" src="{{CafeNero.Image}}"></a></td>
+    <th><a href="/cafenero">{{CafeNero.Title}}</a></th>
+    <th>TripAdvisor Review</th>
   </tr>
   <tr>
     <td><a
@@ -104,8 +126,9 @@
 </table>
 <table>
   <tr>
-    <td rowspan="2"><a href="/greggs"><img height="200" width="300" src="{{Greggs.Image}}"></a></td>
-    <td><a href="/greggs">{{Greggs.Title}}</a></td>
+    <td rowspan="2"><a href="/greggs"><img height="210" width="300" src="{{Greggs.Image}}"></a></td>
+    <th><a href="/greggs">{{Greggs.Title}}</a></th>
+    <th>TripAdvisor</th>
   </tr>
   <tr>
     <td><a
@@ -115,8 +138,9 @@
 </table>
 <table>
   <tr>
-    <td rowspan="2"><a href="/piecebox"><img height="200" width="300" src="{{PieceBox.Image}}"></a></td>
-    <td><a href="/piecebox">{{PieceBox.Title}}</a></td>
+    <td rowspan="2"><a href="/piecebox"><img height="210" width="300" src="{{PieceBox.Image}}"></a></td>
+    <th><a href="/piecebox">{{PieceBox.Title}}</a></th>
+    <th>TripAdvisor Review</th>
   </tr>
   <tr>
     <td><a
