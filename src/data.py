@@ -21,8 +21,10 @@ LeafandBean = {
   'SaturdayO': '9.00',  'SaturdayC': '17.00',
   'SundayO': '10.00',   'SundayC': '17.00',
 
+  'Website': 'https://www.leafandbeanedinburgh.co.uk/',
   'Image': '/static/images/leafandbean2.jpg',
   'Review': '/static/images/leafandbeanReview.jpg',
+  'TripAdvisor':'https://www.tripadvisor.co.uk/Restaurant_Review-g186525-d4107030-Reviews-Leaf_Bean-Edinburgh_Scotland.html',
 }
 
 LaBarantine = {
@@ -48,8 +50,10 @@ LaBarantine = {
   'SaturdayO': '7.15',  'SaturdayC': '18.00',
   'SundayO': '7.15',   'SundayC': '18.00',
 
+  'Website': 'https://www.labarantine.com/',
   'Image': '/static/images/labarantine.jpg',
   'Review': '/static/images/labarantineReview.jpg',
+  'TripAdvisor': 'https://www.tripadvisor.co.uk/Restaurant_Review-g186525-d2486108-Reviews-La_Barantine-Edinburgh_Scotland.html',
 }
 
 ThePod = {
@@ -75,8 +79,10 @@ ThePod = {
   'SaturdayO': '9.00',  'SaturdayC': '17.00',
   'SundayO': 'Closed',   'SundayC': 'Closed',
 
+  'Website': 'https://thepodedinburgh.com/the-food',
   'Image': '/static/images/thepod.jpg',
   'Review': '/static/images/thepodReview.jpg',
+  'TripAdvisor': 'https://www.tripadvisor.co.uk/Restaurant_Review-g186525-d12379767-Reviews-The_Pod_Cafe-Edinburgh_Scotland.html',
 }
 
 Starbucks = {
@@ -102,8 +108,10 @@ Starbucks = {
   'SaturdayO': '5.45',  'SaturdayC': '21.30',
   'SundayO': '5.45',   'SundayC': '21.30',
 
+  'Website': 'https://www.starbucks.co.uk/',
   'Image': '/static/images/starbucks.jpg',
   'Review': '/static/images/starbucksReview.jpg',
+  'TripAdvisor': 'https://www.tripadvisor.co.uk/Restaurant_Review-g186525-d6280058-Reviews-Starbucks-Edinburgh_Scotland.html',
 }
 
 Costa = {
@@ -129,8 +137,10 @@ Costa = {
   'SaturdayO': '7.00',  'SaturdayC': '20.00',
   'SundayO': '8.00',   'SundayC': '20.00',
 
+  'Website': 'https://www.costa.co.uk/',
   'Image': '/static/images/costa.jpg',
   'Review': '/static/images/costaReview.jpg',
+  'TripAdvisor': 'https://www.tripadvisor.co.uk/Restaurant_Review-g186525-d12025919-Reviews-Costa_Coffee-Edinburgh_Scotland.html',
 }
 
 ProjectCoffee = {
@@ -155,8 +165,10 @@ ProjectCoffee = {
   'SaturdayO': '8.00',  'SaturdayC': '18.00',
   'SundayO': '8.00',   'SundayC': '18.00',
 
+  'Website': '',
   'Image': '/static/images/projectcoffee.jpg',
   'Review': '/static/images/projectcoffeeReview.jpg',
+  'TripAdvisor': 'https://www.tripadvisor.co.uk/Restaurant_Review-g186525-d1856956-Reviews-Project_Coffee-Edinburgh_Scotland.html',
 }
 
 OrganicDeliciousCafe = {
@@ -182,8 +194,10 @@ OrganicDeliciousCafe = {
   'SaturdayO': '9.30',  'SaturdayC': '16.30',
   'SundayO': '10.00',   'SundayC': '16.00',
 
+  'Website': 'https://www.organicdeliciouscafe.com/menu/',
   'Image': '/static/images/organicdeliciouscafe.jpg',
   'Review': '/static/images/organicdeliciouscafeReview.jpg',
+  'TripAdvisor': 'https://www.tripadvisor.co.uk/Restaurant_Review-g186525-d10194991-Reviews-Organic_Delicious-Edinburgh_Scotland.html',
 }
 
 CafeNero = {
@@ -209,8 +223,10 @@ CafeNero = {
   'SaturdayO': '7.30',  'SaturdayC': '18.30',
   'SundayO': '8.30',   'SundayC': '18.00',
 
+  'Website': 'https://caffenero.com/uk/en/',
   'Image': '/static/images/cafenero.jpg',
   'Review': '/static/images/cafeneroReview.jpg',
+  'TripAdvisor': 'https://www.tripadvisor.co.uk/Restaurant_Review-g186525-d4925593-Reviews-Caffe_Nero-Edinburgh_Scotland.html',
 }
 
 Greggs = {
@@ -235,8 +251,10 @@ Greggs = {
   'SaturdayO': '7.30',  'SaturdayC': '16.30',
   'SundayO': '9.00',   'SundayC': '16.00',
 
+  'Website': 'https://www.greggs.co.uk/',
   'Image': '/static/images/greggs.jpg',
   'Review': '/static/images/greggsReview1.jpg',
+  'TripAdvisor': 'https://www.tripadvisor.co.uk/Restaurant_Review-g186525-d10507440-Reviews-Greggs-Edinburgh_Scotland.html',
 }
 
 PieceBox = {
@@ -262,6 +280,8 @@ PieceBox = {
   'SaturdayO': '9.00',  'SaturdayC': '17.00',
   'SundayO': '9.00',   'SundayC': '17.00',
 
+  'Website': 'http://www.piecebox.co.uk/',
   'Image': '/static/images/piecebox.jpg',
   'Review': '/static/images/pieceboxReview.jpg',
+  'TripAdvisor': 'https://www.tripadvisor.co.uk/Restaurant_Review-g186525-d2192708-Reviews-Piecebox-Edinburgh_Scotland.html',
 }
