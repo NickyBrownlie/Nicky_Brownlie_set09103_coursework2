@@ -1,0 +1,27 @@
+{% extends "navbar.html" %}
+{% block content %}
+<html>
+<head>
+<style>
+body {
+  background-image: url("/static/images/brownbackground.jpg");
+}
+form {
+  text-align: center;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<form name="login_form" action="" method="post">
+  <input type="email" placeholder="Email" name="email">
+  <input type="password" placeholder="Password" name="password">
+  <button type="submit" class="btn" name="button" value="login">
+    Sign In
+  </button>
+</form>
+
+</body>
+</html>
+{% endblock %}
