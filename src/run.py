@@ -44,14 +44,15 @@ def secret():
                                            Greggs=Greggs,
                                            PieceBox=PieceBox)
 
-@app.route("/adminchange/", methods=['GET', 'POST'])
-def adminchange():
+@app.route("/adminchange/<name>", methods=['GET', 'POST'])
+def adminchange(name):
   var1 = LeafandBean
   if request.method == 'POST':
-    for key, value in var1.items():
-      rfdict = request.form.to_dict()
-      var1.update(rfdict)
-  return render_template("adminpage.html", var1=var1)
+      for key, value in var1.items():
+        rfdict = request.form.to_dict()
+        var1.update(rfdict)
+  print (name)
+  return render_template('adminpage.html', var1=var1)
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
