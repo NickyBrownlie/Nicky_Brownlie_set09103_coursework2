@@ -49,12 +49,8 @@ def adminchange():
   var1 = LeafandBean
   if request.method == 'POST':
     for key, value in var1.items():
-      keyd = request.form.keys()
-      keyf = var1.keys()
-      var1['Espresso'] = request.form['Espresso']
-
-      print(request.form)
-      print(request.form['Espresso'])
+      rfdict = request.form.to_dict()
+      var1.update(rfdict)
   return render_template("adminpage.html", var1=var1)
 
 @app.route("/login", methods=['GET', 'POST'])
