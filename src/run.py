@@ -30,10 +30,11 @@ def logout():
     session['logged_in'] = False
     return redirect(url_for('.root'))
 
-@app.route("/secret/")
+@app.route("/admin/")
 @requires_login
 def secret():
-    return "Secret Page"
+  var1 = LeafandBean
+  return render_template('adminpage.html', var1=var1)
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
@@ -47,7 +48,7 @@ def login():
     return render_template('login.html')
 
 @app.route('/')
-def homepage():
+def root():
   return render_template('homepage.html')
 
 @app.route('/allcoffee/')
