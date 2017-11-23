@@ -30,11 +30,32 @@ def logout():
     session['logged_in'] = False
     return redirect(url_for('.root'))
 
-@app.route("/admin/")
+@app.route("/adminlist/")
 @requires_login
 def secret():
+  return render_template('adminallcoffee.html',  LeafandBean=LeafandBean,
+                                           LaBarantine=LaBarantine,
+                                           ThePod=ThePod,
+                                           Starbucks=Starbucks,
+                                           Costa=Costa,
+                                           ProjectCoffee=ProjectCoffee,
+                                           OrganicDeliciousCafe=OrganicDeliciousCafe,
+                                           CafeNero=CafeNero,
+                                           Greggs=Greggs,
+                                           PieceBox=PieceBox)
+
+@app.route("/adminchange/", methods=['GET', 'POST'])
+def adminchange():
   var1 = LeafandBean
-  return render_template('adminpage.html', var1=var1)
+  if request.method == 'POST':
+    for key, value in var1.items():
+      keyd = request.form.keys()
+      keyf = var1.keys()
+      var1['Espresso'] = request.form['Espresso']
+
+      print(request.form)
+      print(request.form['Espresso'])
+  return render_template("adminpage.html", var1=var1)
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
@@ -63,6 +84,7 @@ def allcoffee():
                                            CafeNero=CafeNero,
                                            Greggs=Greggs,
                                            PieceBox=PieceBox)
+
 
 @app.route('/leafandbean/')
 def leafandbean():
