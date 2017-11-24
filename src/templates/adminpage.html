@@ -2,6 +2,18 @@
 {% block content %}
 <html>
 <head>
+<style>
+  body{
+    background-image: url("/static/images/brownbackground.jpg");
+  }
+  th, td, tr{
+    background color: #fff;
+  }
+  caption{
+    color: #337AB7;
+    font-size: 150%;
+  }
+</style>
 </head>
 
 <body>
@@ -120,6 +132,7 @@
     <td><input type="text" name="SundayC" value="{{var1.SundayC}}"</td>
   </tr>
 </table>
+<br>
 <input type="submit" value="Approve Changes">
 </form>
 
