@@ -1,6 +1,6 @@
 import bcrypt
 from functools import wraps
-from flask import Flask, render_template, redirect, request, session, url_for
+from flask import Flask, render_template, redirect, request, session, url_for, flash
 from flask import Flask
 app = Flask(__name__, template_folder='/home/tc/Nicky_Brownlie_set09103_coursework2/src/templates')
 
@@ -30,7 +30,7 @@ def logout():
     session['logged_in'] = False
     return redirect(url_for('.root'))
 
-@app.route("/adminlist/")
+@app.route("/adminchange/")
 @requires_login
 def secret():
   return render_template('adminallcoffee.html',  LeafandBean=LeafandBean,
@@ -44,15 +44,18 @@ def secret():
                                            Greggs=Greggs,
                                            PieceBox=PieceBox)
 
-@app.route("/adminchange/<name>", methods=['GET', 'POST'])
-def adminchange(name):
-  var1 = LeafandBean
-  if request.method == 'POST':
+@app.route("/adminchange/LeafandBean/", methods=['GET', 'POST'])
+def adminchange():
+    var1 = LeafandBean
+    if request.method == 'GET':
+      return render_template('adminpage.html', var1=var1)
+      print(var1)
+    else:
       for key, value in var1.items():
         rfdict = request.form.to_dict()
         var1.update(rfdict)
-  print (name)
-  return render_template('adminpage.html', var1=var1)
+        return render_template('adminpage.html', var1=var1)
+
 
 @app.route("/login", methods=['GET', 'POST'])
 def login():
@@ -81,8 +84,115 @@ def allcoffee():
                                            CafeNero=CafeNero,
                                            Greggs=Greggs,
                                            PieceBox=PieceBox)
+#----------------------------------------------------------------------------------------------------
+@app.route("/adminchange/LaBarantine/", methods=['GET', 'POST'])
+def adminchange1():
+    var1 = LaBarantine
+    if request.method == 'GET':
+      return render_template('adminpage.html', var1=var1)
+      print(var1)
+    else:
+      for key, value in var1.items():
+        rfdict = request.form.to_dict()
+        var1.update(rfdict)
+        return render_template('adminpage.html', var1=var1)
 
+@app.route("/adminchange/ThePod/", methods=['GET', 'POST'])
+def adminchange2():
+    var1 = ThePod
+    if request.method == 'GET':
+      return render_template('adminpage.html', var1=var1)
+      print(var1)
+    else:
+      for key, value in var1.items():
+        rfdict = request.form.to_dict()
+        var1.update(rfdict)
+        return render_template('adminpage.html', var1=var1)
 
+@app.route("/adminchange/Starbucks/", methods=['GET', 'POST'])
+def adminchange3():
+    var1 = Starbucks
+    if request.method == 'GET':
+      return render_template('adminpage.html', var1=var1)
+      print(var1)
+    else:
+      for key, value in var1.items():
+        rfdict = request.form.to_dict()
+        var1.update(rfdict)
+        return render_template('adminpage.html', var1=var1)
+
+@app.route("/adminchange/Costa/", methods=['GET', 'POST'])
+def adminchange4():
+    var1 = Costa
+    if request.method == 'GET':
+      return render_template('adminpage.html', var1=var1)
+      print(var1)
+    else:
+      for key, value in var1.items():
+        rfdict = request.form.to_dict()
+        var1.update(rfdict)
+        return render_template('adminpage.html', var1=var1)
+
+@app.route("/adminchange/ProjectCoffee/", methods=['GET', 'POST'])
+def adminchange5():
+    var1 = ProjectCoffee
+    if request.method == 'GET':
+      return render_template('adminpage.html', var1=var1)
+      print(var1)
+    else:
+      for key, value in var1.items():
+        rfdict = request.form.to_dict()
+        var1.update(rfdict)
+        return render_template('adminpage.html', var1=var1)
+
+@app.route("/adminchange/OrganicDeliciousCafe/", methods=['GET', 'POST'])
+def adminchange6():
+    var1 = OrganicDeliciousCafe
+    if request.method == 'GET':
+      return render_template('adminpage.html', var1=var1)
+      print(var1)
+    else:
+      for key, value in var1.items():
+        rfdict = request.form.to_dict()
+        var1.update(rfdict)
+        return render_template('adminpage.html', var1=var1)
+
+@app.route("/adminchange/CafeNero/", methods=['GET', 'POST'])
+def adminchange7():
+    var1 = CafeNero
+    if request.method == 'GET':
+      return render_template('adminpage.html', var1=var1)
+      print(var1)
+    else:
+      for key, value in var1.items():
+        rfdict = request.form.to_dict()
+        var1.update(rfdict)
+        return render_template('adminpage.html', var1=var1)
+
+@app.route("/adminchange/Greggs/", methods=['GET', 'POST'])
+def adminchange8():
+    var1 = Greggs
+    if request.method == 'GET':
+      return render_template('adminpage.html', var1=var1)
+      print(var1)
+    else:
+      for key, value in var1.items():
+        rfdict = request.form.to_dict()
+        var1.update(rfdict)
+        return render_template('adminpage.html', var1=var1)
+
+@app.route("/adminchange/PieceBox/", methods=['GET', 'POST'])
+def adminchange9():
+    var1 = PieceBox
+    if request.method == 'GET':
+      return render_template('adminpage.html', var1=var1)
+      print(var1)
+    else:
+      for key, value in var1.items():
+        rfdict = request.form.to_dict()
+        var1.update(rfdict)
+        return render_template('adminpage.html', var1=var1)
+#--------------------------------------------------------------------------
 @app.route('/leafandbean/')
 def leafandbean():
   var1 = LeafandBean
