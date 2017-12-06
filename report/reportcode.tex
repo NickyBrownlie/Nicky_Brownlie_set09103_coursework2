@@ -1,0 +1,110 @@
+% #######################################
+% ########### FILL THESE IN #############
+% #######################################
+\def\mytitle{Coursework 2 Report}
+\def\mykeywords{Fill, These, In, So, google, can, find, your, report}
+\def\myauthor{Nicky Brownlie}
+\def\contact{40165754@napier.ac.uk}
+\def\mymodule{Module Title (SET09103)}
+% #######################################
+% #### YOU DON'T NEED TO TOUCH BELOW ####
+% #######################################
+\documentclass[10pt, a4paper]{article}
+\usepackage[a4paper,outer=1.5cm,inner=1.5cm,top=1.75cm,bottom=1.5cm]{geometry}
+\twocolumn
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+%colour our links, remove weird boxes
+\usepackage[colorlinks,linkcolor={black},citecolor={blue!80!black},urlcolor={blue!80!black}]{hyperref}
+%Stop indentation on new paragraphs
+\usepackage[parfill]{parskip}
+%% Arial-like font
+\usepackage{lmodern}
+\renewcommand*\familydefault{\sfdefault}
+%Napier logo top right
+\usepackage{watermark}
+%Lorem Ipusm dolor please don't leave any in you final report ;)
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{listings}
+%give us the Capital H that we all know and love
+\usepackage{float}
+%tone down the line spacing after section titles
+\usepackage{titlesec}
+%Cool maths printing
+\usepackage{amsmath}
+%PseudoCode
+\usepackage{algorithm2e}
+
+\titlespacing{\subsection}{0pt}{\parskip}{-3pt}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-\parskip}
+\titlespacing{\paragraph}{0pt}{\parskip}{\parskip}
+\newcommand{\figuremacro}[5]{
+    \begin{figure}[#1]
+        \centering
+        \includegraphics[width=#5\columnwidth]{#2}
+        \caption[#3]{\textbf{#3}#4}
+        \label{fig:#2}
+    \end{figure}
+}
+
+\lstset{
+	escapeinside={/*@}{@*/}, language=C++,
+	basicstyle=\fontsize{8.5}{12}\selectfont,
+	numbers=left,numbersep=2pt,xleftmargin=2pt,frame=tb,
+    columns=fullflexible,showstringspaces=false,tabsize=4,
+    keepspaces=true,showtabs=false,showspaces=false,
+    backgroundcolor=\color{white}, morekeywords={inline,public,
+    class,private,protected,struct},captionpos=t,lineskip=-0.4em,
+	aboveskip=10pt, extendedchars=true, breaklines=true,
+	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	keywordstyle=\color[rgb]{0,0,1},
+	commentstyle=\color[rgb]{0.133,0.545,0.133},
+	stringstyle=\color[rgb]{0.627,0.126,0.941}
+}
+
+\thiswatermark{\centering \put(336.5,-38.0){\includegraphics[scale=0.8]{logo}} }
+\title{\mytitle}
+\author{\myauthor\hspace{1em}\\\contact\\Edinburgh Napier University\hspace{0.5em}-\hspace{0.5em}\mymodule}
+\date{}
+\hypersetup{pdfauthor=\myauthor,pdftitle=\mytitle,pdfkeywords=\mykeywords}
+\sloppy
+% #######################################
+% ########### START FROM HERE ###########
+% #######################################
+\begin{document}
+	\maketitle
+	\begin{abstract}
+        For this coursework we were tasked with creating a web-app using Python Flask in conjunction with HTML, CSS and bootstrap.  The scope of this coursework was much bigger than the last so a number of new features will be used as well as covering the basic skills developed in the previous coursework.  This led to a much more diverse website with different ways for the user to interact with it.
+	\end{abstract}
+    
+
+	\section{Introduction}
+        The web-app is a website were coffee shops around the area are displayed with information regarding their prices and opening times in order for a user to compare the coffee shops and make an informed decision about which one to pick.  The web-app allows the user to navigate freely between the list of coffee shops and select one based on their preference.  Other information is displayed for each shop including a TripAdvisor review and score as well as appropriate links to the shops website and a link to the location of the place on Google Maps.  The web-app also allows for an admin to make changes to any of the information about the coffee shops.
+    \section{Design}
+        The website is designed so rather than having to create a new HTML file for every individual coffee shop, you can extract the data from a python dictionary and the pass the specific data into an HTML template.  This is much more efficient as not only does it save disk space but it prevents re-writing HTML code. The HTML template contains Jinja2 tags which link to a specific item from the dictionary and the python main file controls which shop data is inputted into the template.
+        There is a nav bar which is fixed to the top of all the web pages which allows the user to freely navigate the website.  This is a common way for website navigation now and it means the user should not have to enter in the url for the page they want. The web-app uses inheritance in order to display the HTML templates such as the nav bar across all pages. The main page of the website is a list which displays all the coffee shops in the dictionary with a link to a TripAdvisor review, a link to Google Maps and then a link to the page in the web-app that will display more detailed information.By displaying all the shops in a list first the user can click on the one they want to see more details about and this keeps the website from being too cluttered.  Once the user has clicked on a coffee shop the data from the dictionary will fill a table with that coffee shops appropriate data.  From here the user can see all the information about the shop as well as a link to the shops actual website.  There is a sign in button on the top left of the website at all times which leads to a log in page.  From here only the admin should be able to log in with the correct details and then be directed to a list of the shops.  Once the admin has clicked on the shop, a page displaying that shops information in text boxes will be shown.  These text boxes are editable so once the admin has made changes and clicked the approve button the information that the user will see will be changed.     
+        
+        
+	
+	\section{Enhancements}
+	    Features that would be good to add to the web-app would be a way of sorting the information from the coffee shop so that the user could see which shop had the cheapest espresso for example or which shop would be staying open the latest that day.  This would greatly enhance the user experience as the web-app at the moment only displays the data it is asked to.  Another good way for the user to sort the information would be to implement a search bar.  In some cases some of the shops do not do a large version of the drinks so the user could search for the word 'large' and be shown a list of shops that sell large drinks.  Another good feature would be to implement Google Maps into the website.  This way instead of using links to Google Maps the information could already be displayed on the website, showing the user their location as well as all the coffee shops in the data set.  An improvement for the website would be an option on the admin page to add more drinks to the data set.  For now the admin can only change the information about the drinks but a lot of these shops sell other kinds that are not displayed on the website.  Also a good improvement that could have been added would be to have an option that tells the user if the shop is already open or closed, which would improve the user experience.
+	\section{Critical Evaluation}
+        One of the features that works well on the web-app is the admin amending page.  On this page the admin can instantly change the information that the user will see.  This page was necessary to add as the prices for a coffee shop are prone to change and this way the admin can simply update this information.  Also if the particular shop is closed for any reason the admin can quickly change the opening time information.  However if the server has to be restarted the changes that the admin has made will not be saved.  One of the features that could have been improved is the actual log in page.  The admin email and password are hard coded into the website which makes it easier if anyone who wasn't an admin wanted to access the admin page.  A solution for this would be to add a sign up page where the admin can enter their own personal password which would be encrypted and then stored.    
+    \section{Personal Evaluation}
+        For this coursework I feel that I expanded on my first web-app and was able to add more features such as a log in and being able to amend values.  This coursework has helped with my python abilities and now I feel comfortable programming in the language.  I was also able to learn from my mistakes in the last coursework as I was having a lot of problems with git and how to use it but this time I was able to add commits regularly with no problems and I feel my understanding of how git works has grown.  Some of the challenges I faced was trying to get the admin amend page to work which did take up more time than it should have.  I was only able to get the page to amend the values on the coffee shops page by repeating the same code for each of the coffee shops rather than one function being able to do it which I was not too happy with but I had to settle with it.  
+    
+	    
+\bibliographystyle{ieeetr}
+\bibliography{references}
+ https://www.leafandbeanedinburgh.co.uk/\\
+ https://www.labarantine.com/\\
+ https://thepodedinburgh.com/the-food\\
+ https://www.starbucks.co.uk/\\
+ https://www.costa.co.uk/\\
+ https://www.zomato.com/edinburgh/project-coffee-bruntsfield/menu\\
+ https://www.organicdeliciouscafe.com/menu/\\
+ https://caffenero.com/uk/en/\\
+ https://www.greggs.co.uk/\\
+ http://www.piecebox.co.uk/\\
+\end{document}
